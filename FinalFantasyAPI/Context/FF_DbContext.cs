@@ -31,7 +31,7 @@ namespace FinalFantasyAPI.Context
             {
                 entity.Property(e => e.Id)
                     .HasColumnName("id")
-                    .ValueGeneratedNever();
+                    .ValueGeneratedOnAdd();
 
                 entity.Property(e => e.Absorb).HasColumnName("absorb");
 
@@ -50,7 +50,7 @@ namespace FinalFantasyAPI.Context
             {
                 entity.Property(e => e.Id)
                     .HasColumnName("id")
-                    .ValueGeneratedNever();
+                    .ValueGeneratedOnAdd();
 
                 entity.Property(e => e.Name).HasColumnName("name");
             });
@@ -59,7 +59,7 @@ namespace FinalFantasyAPI.Context
             {
                 entity.Property(e => e.Id)
                     .HasColumnName("id")
-                    .ValueGeneratedNever();
+                    .ValueGeneratedOnAdd();
 
                 entity.Property(e => e.Name)
                     .IsRequired()
@@ -104,7 +104,7 @@ namespace FinalFantasyAPI.Context
             {
                 entity.Property(e => e.Id)
                     .HasColumnName("id")
-                    .ValueGeneratedNever();
+                    .ValueGeneratedOnAdd();
 
                 entity.Property(e => e.Ap).HasColumnName("ap");
 
@@ -133,7 +133,7 @@ namespace FinalFantasyAPI.Context
             {
                 entity.Property(e => e.Id)
                     .HasColumnName("id")
-                    .ValueGeneratedNever();
+                    .ValueGeneratedOnAdd();
 
                 entity.Property(e => e.Damage).HasColumnName("damage");
 
