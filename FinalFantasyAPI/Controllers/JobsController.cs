@@ -73,7 +73,7 @@ namespace FinalFantasyAPI.Controllers
                 _context.Remove(job);
                 _context.SaveChanges();
 
-                return Ok("Job updated.");
+                return Ok("Job deleted.");
             }
             catch (Exception ex)
             {
